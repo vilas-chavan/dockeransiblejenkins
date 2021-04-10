@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: vkapp
-        image: "vilaschavan80/vkapp."$BUILD_NUMBER":{{DOCKER_TAG}}"
+        image: "vilaschavan80/vkapp.${BUILD_NUMBER}:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8081:8080
